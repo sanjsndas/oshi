@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Oshie Pruning Services – Professional Tree & Garden Care</title>
+<style>
+  /* Import Google font Poppins */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+  :root {
+    --color-blue-light: #D0E8FC;
+    --color-blue-primary: #1E40AF;
+    --color-blue-dark: #1E3A8A;
+    --color-gray-light: #E5E7EB;
+    --color-gray-medium: #6B7280;
+    --color-gray-dark: #374151;
+    --color-white: #FFFFFF;
+    --border-radius: 0.75rem;
+    --max-width: 1200px;
+    --shadow-light: rgba(0, 0, 0, 0.05);
+    --shadow-medium: rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.35s;
+  }
+
+  /* Reset and base */
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin:0%;
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-white);
+    color: var(--color-gray-medium);
+    line-height: 1.65;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    color: var(--color-blue-primary);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+  }
+  a:hover,
+  a:focus {
+    color: var(--color-blue-dark);
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 12px var(--shadow-light);
+    display: block;
+  }
+
+  /* Container with max width center */
+  .container {
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  /* Sticky Header */
+  header {
+    position: sticky;
+    top: 0;
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-gray-light);
+    z-index: 999;
+    box-shadow: 0 4px 6px var(--shadow-light);
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+  }
+
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--color-blue-primary);
+    letter-spacing: 0.05em;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 600;
+  }
+
+  .nav-links a {
+    padding: 0.35rem 0.5rem;
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+  }
+  .nav-links a:hover,
+  .nav-links a:focus {
+    background-color: var(--color-blue-light);
+    color: var(--color-blue-dark);
+  }
+
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(135deg, var(--color-blue-light), var(--color-blue-primary));
+    color: var(--color-white);
+    padding: 5rem 1.5rem 6rem;
+    text-align: center;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    box-shadow: 0 8px 15px rgba(30, 64, 175, 0.4);
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.1;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    max-width: 600px;
+    margin: 0 auto 2.8rem;
+    color: #e0e7ff;
+  }
+
+  .btn-primary {
+    background-color: var(--color-white);
+    color: var(--color-blue-primary);
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    border-radius: var(--border-radius);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 6px 17px rgba(255, 255, 255, 0.7);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+  }
+  .btn-primary:hover,
+  .btn-primary:focus {
+    transform: scale(1.05);
+    box-shadow: 0 8px 22px rgba(255, 255, 255, 0.9);
+    outline: none;
+  }
+
+  /* Section spacing */
+  section {
+    padding: 4rem 0 5rem;
+  }
+
+  /* Two column grid for about */
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .about-text h2 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: var(--color-blue-dark);
+    margin-bottom: 1rem;
+  }
+
+  .about-text p {
+    margin-bottom: 1.25rem;
+    color: var(--color-gray-dark);
+  }
+
+  /* Services section */
+  .services h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--color-blue-dark);
+    margin-bottom: 3rem;
+  }
+
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+  }
+
+  .card {
+    background: var(--color-white);
+    box-shadow: 0 7px 20px var(--shadow-light);
+    border-radius: var(--border-radius);
+    padding: 2.3rem 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: box-shadow var(--transition-speed);
+  }
+
+  .card:hover,
+  .card:focus-within {
+    box-shadow: 0 12px 30px var(--shadow-medium);
+  }
+
+  .card img {
+    margin-bottom: 1.8rem;
+    border-radius: var(--border-radius);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-blue-primary);
+    margin-bottom: 0.7rem;
+  }
+
+  .card p {
+    flex-grow: 1;
+    color: var(--color-gray-dark);
+    margin-bottom: 1.25rem;
+  }
+
+  .price {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--color-blue-dark);
+  }
+
+  /* Customer satisfaction and disclaimer */
+  .extras {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-gray-dark);
+  }
+  .extras h3 {
+    font-size: 1.75rem;
+    color: var(--color-blue-dark);
+    margin-bottom: 1rem;
+  }
+  .extras p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+  }
+
+  /* Footer */
+  footer {
+    background-color: var(--color-blue-dark);
+    color: var(--color-white);
+    text-align: center;
+    padding: 2.75rem 1.5rem;
+    font-size: 1rem;
+  }
+  footer p {
+    margin: 0.15rem 0;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .about {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .about-text {
+      order: 2;
+    }
+    .about img {
+      order: 1;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+    .btn-primary {
+      padding: 0.85rem 2rem;
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav aria-label="Primary navigation">
+      <div class="logo" tabindex="0">Oshie Pruning</div>
+      <div class="nav-links">
+        <a href="index.html" tabindex="0" aria-current="page">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy Policy</a>
+        <a href="terms.html" tabindex="0">Terms & Conditions</a>
+        <a href="cookies.html" tabindex="0">Cookies Policy</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" role="banner">
+    <div class="container">
+      <h1>Expert Tree & Garden Pruning Services for a Healthier, More Beautiful Landscape</h1>
+      <p>At Oshie Pruning, we enhance your outdoor spaces with professional care that nurtures growth, beauty, and safety.</p>
+      <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});" aria-label="Get in touch for pruning services">Get a Free Consultation</button>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-text">
+        <h2 id="about-heading">Why Choose Oshie Pruning?</h2>
+        <p>Oshie Pruning delivers top-notch tree and garden pruning services to ensure your landscape not only looks spectacular but remains healthy year-round. Our skilled arborists have years of experience tailored to the specific needs of your trees, shrubs, and garden plants.</p>
+        <p>Proper pruning is key to managing tree health, improving fruit and flower production, and preventing hazards like broken limbs or unstable branches. We use precise techniques, modern equipment, and a careful touch to maintain the natural beauty and safety of your property.</p>
+        <p>Whether you have delicate ornamental trees or robust fruit trees, small shrubs, or large garden beds, we customize our approach to your landscape's unique character and needs. Our eco-friendly practices ensure we nurture your environment with care and respect.</p>
+        <p>Trust Oshie Pruning for efficient, safe, and aesthetically pleasing pruning that enhances the value and enjoyment of your outdoor space.</p>
+      </div>
+      <img src="p1.png" alt="Arborist pruning a tree branch" loading="lazy" />
+    </div>
+  </section>
+
+  <section class="services" id="services" aria-labelledby="services-heading">
+    <div class="container">
+      <h2 id="services-heading">Our Services & Pricing</h2>
+      <div class="service-cards">
+        <article class="card" tabindex="0" aria-label="Tree Pruning service description and price">
+          <img src="s1.jpg" alt="Pruned tree branches with pruning shears" loading="lazy" />
+          <h3>Tree Pruning</h3>
+          <p>Selective removal of tree branches to improve health, structure, and appearance of trees. Helps prevent disease and storm damage.</p>
+          <p class="price">Starting at $150 per tree</p>
+        </article>
+        <article class="card" tabindex="0" aria-label="Shrub and Hedge Trimming service description and price">
+          <img src="s2.jpg" alt="Person trimming a green hedge with shears" loading="lazy" />
+          <h3>Shrub & Hedge Trimming</h3>
+          <p>Shaping and maintaining your shrubs and hedges for a neat, attractive garden look. Regular trimming promotes healthy growth.</p>
+          <p class="price">Starting at $75 per hour</p>
+        </article>
+        <article class="card" tabindex="0" aria-label="Fruit Tree Pruning service description and price">
+          <img src="s3.jpg" alt="Close up of pruning branch on fruit tree" loading="lazy" />
+          <h3>Fruit Tree Pruning</h3>
+          <p>Enhance fruit production and tree health with specialized pruning techniques tailored for fruit-bearing trees.</p>
+          <p class="price">Starting at $180 per tree</p>
+        </article>
+        <article class="card" tabindex="0" aria-label="Emergency Storm Damage Pruning service description and price">
+          <img src="s4.jpg" alt="Tree damaged by storm being pruned" loading="lazy" />
+          <h3>Emergency Storm Damage Pruning</h3>
+          <p>Quick response pruning to safely remove broken or damaged limbs after storms to protect your property and trees.</p>
+          <p class="price">Starting at $250 per visit</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="extras" aria-labelledby="customer-satisfaction-heading" style="background: var(--color-blue-light); border-radius: var(--border-radius); padding: 3rem 1.5rem; margin: 0 1.5rem;">
+    <h3 id="customer-satisfaction-heading">Customer Satisfaction Is Our Priority</h3>
+    <p>We are committed to providing outstanding pruning services backed by professional expertise, attention to detail, and excellent customer care. Your satisfaction means everything to us, and we work closely with you to understand your unique landscape goals and challenges.</p>
+    <p>Our clients trust us for reliability, punctuality, and transparent pricing with no hidden fees. We guarantee a clean, safe job site after every visit and promptly address any questions or concerns you have.</p>
+  </section>
+
+  <section class="extras" aria-labelledby="disclaimer-heading" style="margin-top: 3rem;">
+    <h3 id="disclaimer-heading">Disclaimer</h3>
+    <p>Oshie Pruning strives to provide accurate information and quality services. However, due to variables such as tree species, climate conditions, and unforeseen circumstances, results may vary. Prices listed are starting points and may fluctuate depending on job complexity and location. We recommend scheduling a free consultation for a precise estimate and personalized advice.</p>
+  </section>
+
+  <section id="contact" aria-label="Contact information" class="extras" style="margin-top: 3rem;">
+    <h3>Contact Us</h3>
+    <p><strong>Address:</strong> 20 Cooper Square, New York, NY 10003, USA</p>
+    <p><strong>Phone:</strong> <a href="tel:+18186447798" aria-label="Call Oshie Pruning">+1 (818) 644-7798</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>20 Cooper Square, New York, NY 10003, USA</p>
+    <p>Phone: <a href="tel:+18186447798" style="color: inherit; text-decoration: underline;">+1 (818) 644-7798</a></p>
+    <p>&copy; 2024 Oshie Pruning Services. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

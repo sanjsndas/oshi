@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - Oshie Pruning Services</title>
+  <style>
+    /* Import Google Font Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    :root {
+      --color-blue-primary: #1E40AF;
+      --color-blue-dark: #1E3A8A;
+      --color-gray-dark: #374151;
+      --color-gray-medium: #6B7280;
+      --color-white: #FFFFFF;
+      --border-radius: 0.75rem;
+      --max-width: 1200px;
+      --shadow-light: rgba(0, 0, 0, 0.05);
+      --shadow-medium: rgba(0, 0, 0, 0.1);
+      --transition-speed: 0.3s;
+    }
+
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--color-white);
+      color: var(--color-gray-medium);
+      line-height: 1.65;
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      color: var(--color-blue-primary);
+      text-decoration: none;
+      transition: color var(--transition-speed);
+    }
+    a:hover,
+    a:focus {
+      color: var(--color-blue-dark);
+      outline: none;
+    }
+
+    /* Container */
+    .container {
+      max-width: var(--max-width);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    /* Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--color-white);
+      border-bottom: 1px solid #e5e7eb;
+      z-index: 999;
+      box-shadow: 0 4px 8px var(--shadow-light);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 4.5rem;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--color-blue-primary);
+      letter-spacing: 0.05em;
+      user-select: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      padding: 0.35rem 0.5rem;
+      border-radius: var(--border-radius);
+      transition: background-color var(--transition-speed), color var(--transition-speed);
+    }
+    .nav-links a:hover,
+    .nav-links a:focus {
+      background-color: #dbeafe;
+      color: var(--color-blue-dark);
+      outline-offset: 2px;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 5rem 1.5rem 3rem;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: var(--color-blue-primary);
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-gray-dark);
+      margin-top: 0;
+    }
+
+    /* Main Content Sections */
+    main section {
+      background: var(--color-white);
+      border-radius: var(--border-radius);
+      box-shadow: 0 6px 20px var(--shadow-light);
+      padding: 3rem 2rem 4rem;
+      margin: 3rem auto;
+      max-width: 900px;
+    }
+
+    main section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--color-blue-primary);
+      border-bottom: 2px solid var(--color-blue-primary);
+      padding-bottom: 0.3rem;
+    }
+
+    main section h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      margin-top: 2rem;
+      color: var(--color-blue-dark);
+    }
+
+    main section p,
+    main section ul {
+      font-size: 1.1rem;
+      color: var(--color-gray-dark);
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+    }
+
+    main section ul {
+      padding-left: 1.5rem;
+    }
+
+    main section li {
+      margin-bottom: 0.65rem;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--color-blue-dark);
+      color: var(--color-white);
+      text-align: center;
+      padding: 2.75rem 1.5rem;
+      font-size: 1rem;
+      user-select: none;
+    }
+    footer p {
+      margin: 0.25rem 0;
+    }
+    footer a {
+      color: var(--color-white);
+      text-decoration: underline;
+    }
+    footer a:hover,
+    footer a:focus {
+      color: #acc8ff;
+      outline: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.75rem;
+      }
+      main section {
+        margin: 2rem 1rem;
+        padding: 2rem 1.5rem 3rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 17px;
+      }
+      nav {
+        flex-direction: column;
+        height: auto;
+        gap: 0.6rem;
+        padding-bottom: 0.5rem;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav aria-label="Primary navigation">
+      <div class="logo" tabindex="0">Oshie Pruning</div>
+      <div class="nav-links">
+        <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0" aria-current="page">Privacy Policy</a>
+         <a href="terms.html" tabindex="0">Terms & Conditions </a>
+         <a href="index.html" tabindex="0">Cookies Policy </a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section aria-labelledby="hero-heading" class="hero" role="banner">
+    <h1 id="hero-heading">Privacy Policy</h1>
+    <p>Your privacy is important to us. This Privacy Policy explains how Oshie Pruning Services ("we," "us," or "our") collects, uses, and protects your personal information when you visit or use our website and services.</p>
+  </section>
+
+  <section aria-labelledby="introduction">
+    <h2 id="introduction">Introduction</h2>
+    <p>Welcome to Oshie Pruning Services. We recognize the importance of protecting the personal information that you entrust to us. This Privacy Policy describes how we collect, use, disclose, and safeguard your information when you visit our website or engage our services. Please read this document carefully to understand our views and practices regarding your personal data and how we will treat it.</p>
+    <p>By using our website or services, you consent to the practices outlined in this Privacy Policy. We reserve the right to update this policy from time to time, and we encourage you to review it periodically for any changes.</p>
+  </section>
+
+  <section aria-labelledby="information-we-collect">
+    <h2 id="information-we-collect">Information We Collect</h2>
+    <p>We collect various types of information in order to provide and improve our services to you. The types of information collected include:</p>
+
+    <h3>Personal Information</h3>
+    <p>Personal information is any information that identifies you as an individual. This may include, but is not limited to:</p>
+    <ul>
+      <li>Full name</li>
+      <li>Email address</li>
+      <li>Phone number</li>
+      <li>Home or business address</li>
+      <li>Payment information (provided securely through third-party processors)</li>
+      <li>Any other information you choose to provide when contacting us</li>
+    </ul>
+
+    <h3>Non-Personal Information</h3>
+    <p>In addition to personal information, we collect non-personal information which cannot be used to identify you directly. This includes:</p>
+    <ul>
+      <li>Browser type and version</li>
+      <li>Operating system</li>
+      <li>IP address (anonymized when possible)</li>
+      <li>Page visits and interaction data</li>
+      <li>Referral URLs</li>
+      <li>Cookies and similar tracking technologies</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="how-we-use-your-information">
+    <h2 id="how-we-use-your-information">How We Use Your Information</h2>
+    <p>We use the information we collect for various purposes to better serve you and improve our services, including but not limited to:</p>
+    <ul>
+      <li>Providing, operating, and maintaining our website and services</li>
+      <li>Responding to your inquiries, requests, and customer service needs</li>
+      <li>Managing your bookings, orders, and payments</li>
+      <li>Personalizing your experience by improving content and service delivery</li>
+      <li>Sending you promotional or informational communications (with your consent)</li>
+      <li>Complying with legal obligations and enforcing our terms of use</li>
+      <li>Detecting, preventing, and addressing technical issues, fraud, or abuse</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="cookies-and-tracking-technologies">
+    <h2 id="cookies-and-tracking-technologies">Cookies and Tracking Technologies</h2>
+    <p>Oshie Pruning uses cookies and similar tracking technologies to enhance your experience and collect data about site usage. Cookies are small text files stored on your device by your web browser. They help us recognize your device, remember preferences, and gather analytical data.</p>
+    <p>Types of cookies used include:</p>
+    <ul>
+      <li><strong>Essential Cookies:</strong> Necessary for the operation of our website. Without these, some features may not function properly.</li>
+      <li><strong>Performance and Analytics Cookies:</strong> Help us understand how visitors use our site, enabling us to improve navigation, content, and user experience.</li>
+      <li><strong>Functional Cookies:</strong> Remember your preferences and choices (such as language or region settings).</li>
+      <li><strong>Advertising Cookies:</strong> Used to deliver relevant advertisements based on your interests and usage patterns. We do not share these with third parties without your consent.</li>
+    </ul>
+    <p>You may choose to disable cookies via your browser settings, but this may affect your ability to use certain website features.</p>
+  </section>
+
+  <section aria-labelledby="how-we-protect-your-information">
+    <h2 id="how-we-protect-your-information">How We Protect Your Information</h2>
+    <p>We implement a variety of security measures to safeguard your personal information from unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+    <ul>
+      <li>Secure socket layer (SSL) encryption for data transmitted online</li>
+      <li>Regular security audits and software updates</li>
+      <li>Access controls limiting personal information access to authorized personnel only</li>
+      <li>Policies and training to ensure staff follow privacy best practices</li>
+      <li>Data minimization to collect only necessary information</li>
+    </ul>
+    <p>Despite these efforts, no method of electronic transmission or storage is completely secure. We cannot guarantee absolute security but strive to protect your information to the best of our ability.</p>
+  </section>
+
+  <section aria-labelledby="data-sharing-and-disclosure">
+    <h2 id="data-sharing-and-disclosure">Data Sharing and Disclosure</h2>
+    <p>We do not sell, trade, or rent your personal information to third parties. However, we may share your data in the following circumstances:</p>
+    <ul>
+      <li><strong>With Your Consent:</strong> We may share information if you explicitly authorize us to do so.</li>
+      <li><strong>Service Providers:</strong> We may share information with trusted third-party vendors who perform services on our behalf (such as payment processing, website analytics, or marketing). These providers are contractually obligated to keep your information confidential and secure.</li>
+      <li><strong>Legal Requirements:</strong> If required by law or in response to valid legal requests, we may disclose personal information to comply with government authorities, law enforcement, or legal proceedings.</li>
+      <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of the business process.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="your-rights-and-choices">
+    <h2 id="your-rights-and-choices">Your Rights and Choices</h2>
+    <p>You have certain rights regarding your personal information, including:</p>
+    <ul>
+      <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+      <li><strong>Correction:</strong> Ask us to correct inaccurate or incomplete information.</li>
+      <li><strong>Deletion:</strong> Request the deletion of your personal information where applicable.</li>
+      <li><strong>Restriction:</strong> Ask us to restrict processing of your data under certain conditions.</li>
+      <li><strong>Objection:</strong> Object to certain types of processing, including marketing communications.</li>
+      <li><strong>Data Portability:</strong> Receive your data in a structured format to transfer to another service.</li>
+      <li><strong>Opt-Out of Marketing:</strong> You can opt-out of promotional emails at any time by following the unsubscribe instructions in those emails or contacting us directly.</li>
+    </ul>
+    <p>To exercise these rights or for any questions about your data, please contact us using the information provided below.</p>
+  </section>
+
+  <section aria-labelledby="international-data-transfers">
+    <h2 id="international-data-transfers">International Data Transfers</h2>
+    <p>Since we operate and provide services across multiple regions, your personal information may be transferred to, stored, and processed in countries outside your resident country, including the United States where Oshie Pruning is based.</p>
+    <p>We ensure that any international transfer of your data complies with applicable data protection laws and that adequate safeguards are in place to protect your information. This includes implementing standard contractual clauses and data protection agreements with third parties.</p>
+  </section>
+
+  <section aria-labelledby="retention-of-personal-data">
+    <h2 id="retention-of-personal-data">Retention of Personal Data</h2>
+    <p>We retain your personal information only for as long as necessary to provide our services, comply with legal obligations, resolve disputes, and enforce agreements. When the information is no longer needed, we securely delete or anonymize it to protect your privacy.</p>
+  </section>
+
+  <section aria-labelledby="children-and-minors">
+    <h2 id="children-and-minors">Children and Minors</h2>
+    <p>Our website and services are not intended for individuals under the age of 13 (or the applicable age in your jurisdiction). We do not knowingly collect personal information from children without parental consent.</p>
+    <p>If you believe we have collected information from a child without appropriate consent, please contact us immediately. We will take steps to promptly remove such information.</p>
+  </section>
+
+  <section aria-labelledby="links-to-other-websites">
+    <h2 id="links-to-other-websites">Links to Other Websites</h2>
+    <p>Our website may contain links to third-party websites for your convenience or reference. We do not control and are not responsible for the privacy practices or content of those external sites.</p>
+    <p>We encourage you to review the privacy policies of any third-party websites you visit to understand how they handle your personal data.</p>
+  </section>
+
+  <section aria-labelledby="changes-to-this-privacy-policy">
+    <h2 id="changes-to-this-privacy-policy">Changes to This Privacy Policy</h2>
+    <p>Oshie Pruning Services may update this Privacy Policy periodically to reflect changes in our practices, legal requirements, or technology. We will post the revised policy on this page with an updated effective date.</p>
+    <p>We encourage you to check this page regularly to stay informed about how we protect your personal information.</p>
+  </section>
+
+  <section aria-labelledby="how-to-contact-us" id="contact" tabindex="0">
+    <h2 id="how-to-contact-us">How to Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal information, please contact us using the information below:</p>
+    <p><strong>Oshie Pruning Services</strong></p>
+    <p><strong>Address:</strong> 20 Cooper Square, New York, NY 10003, USA</p>
+    <p><strong>Phone:</strong> <a href="tel:+18186447798">+1 (818) 644-7798</a></p>
+    <p><strong>Email:</strong> <a href="mailto:privacy@oshiepruning.com">privacy@oshiepruning.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>20 Cooper Square, New York, NY 10003, USA</p>
+    <p>Phone: <a href="tel:+18186447798">+1 (818) 644-7798</a></p>
+    <p>&copy; 2024 Oshie Pruning Services. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+

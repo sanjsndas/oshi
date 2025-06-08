@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms and Conditions - Oshie Pruning Services</title>
+  <style>
+    /* Import Google Font Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    :root {
+      --color-blue-primary: #1E40AF;
+      --color-blue-dark: #1E3A8A;
+      --color-gray-dark: #374151;
+      --color-gray-medium: #6B7280;
+      --color-white: #FFFFFF;
+      --border-radius: 0.75rem;
+      --max-width: 1200px;
+      --shadow-light: rgba(0, 0, 0, 0.05);
+      --shadow-medium: rgba(0, 0, 0, 0.1);
+      --transition-speed: 0.3s;
+    }
+
+    /* Reset and base */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--color-white);
+      color: var(--color-gray-medium);
+      line-height: 1.65;
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a {
+      color: var(--color-blue-primary);
+      text-decoration: none;
+      transition: color var(--transition-speed);
+    }
+    a:hover,
+    a:focus {
+      color: var(--color-blue-dark);
+      outline: none;
+    }
+
+    /* Container */
+    .container {
+      max-width: var(--max-width);
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    /* Sticky Header */
+    header {
+      position: sticky;
+      top: 0;
+      background: var(--color-white);
+      border-bottom: 1px solid #e5e7eb;
+      z-index: 999;
+      box-shadow: 0 4px 8px var(--shadow-light);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 4.5rem;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--color-blue-primary);
+      letter-spacing: 0.05em;
+      user-select: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      padding: 0.35rem 0.5rem;
+      border-radius: var(--border-radius);
+      transition: background-color var(--transition-speed), color var(--transition-speed);
+    }
+    .nav-links a:hover,
+    .nav-links a:focus {
+      background-color: #dbeafe;
+      color: var(--color-blue-dark);
+      outline-offset: 2px;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 5rem 1.5rem 3rem;
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: var(--color-blue-primary);
+      margin-bottom: 1rem;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--color-gray-dark);
+      margin-top: 0;
+    }
+
+    /* Main Content Sections */
+    main section {
+      background: var(--color-white);
+      border-radius: var(--border-radius);
+      box-shadow: 0 6px 20px var(--shadow-light);
+      padding: 3rem 2rem 4rem;
+      margin: 3rem auto;
+      max-width: 900px;
+    }
+
+    main section h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--color-blue-primary);
+      border-bottom: 2px solid var(--color-blue-primary);
+      padding-bottom: 0.3rem;
+    }
+
+    main section h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      margin-top: 2rem;
+      color: var(--color-blue-dark);
+    }
+
+    main section p,
+    main section ul {
+      font-size: 1.1rem;
+      color: var(--color-gray-dark);
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+    }
+
+    main section ul {
+      padding-left: 1.5rem;
+    }
+
+    main section li {
+      margin-bottom: 0.65rem;
+      line-height: 1.5;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--color-blue-dark);
+      color: var(--color-white);
+      text-align: center;
+      padding: 2.75rem 1.5rem;
+      font-size: 1rem;
+      user-select: none;
+    }
+    footer p {
+      margin: 0.25rem 0;
+    }
+    footer a {
+      color: var(--color-white);
+      text-decoration: underline;
+    }
+    footer a:hover,
+    footer a:focus {
+      color: #acc8ff;
+      outline: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.75rem;
+      }
+      main section {
+        margin: 2rem 1rem;
+        padding: 2rem 1.5rem 3rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 17px;
+      }
+      nav {
+        flex-direction: column;
+        height: auto;
+        gap: 0.6rem;
+        padding-bottom: 0.5rem;
+      }
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav aria-label="Primary navigation">
+      <div class="logo" tabindex="0">Oshie Pruning</div>
+      <div class="nav-links">
+        <a href="index.html" tabindex="0">Home</a>
+        <a href="privacy.html" tabindex="0">Privacy Policy</a>
+        <a href="terms.html" tabindex="0" aria-current="page">Terms & Conditions</a>
+        <a href="cookies.html" tabindex="0">Cookies Policy</a>
+        <a href="contact.html" tabindex="0">Contact us</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section aria-labelledby="hero-heading" class="hero" role="banner">
+    <h1 id="hero-heading">Terms and Conditions</h1>
+    <p>Welcome to Oshie Pruning Services. Please carefully read these Terms and Conditions before using our website and services. They contain important information about your rights and obligations.</p>
+  </section>
+
+  <section aria-labelledby="introduction">
+    <h2 id="introduction">1. Introduction</h2>
+    <p>These Terms and Conditions (“Terms”) govern your access to and use of the website, services, and any related applications or content (collectively, the “Services”) provided by Oshie Pruning Services (“we,” “us,” or “our”). By accessing or using our Services, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our Services.</p>
+    <p>We reserve the right to update or modify these Terms at any time without prior notice. Your continued use of the Services following any changes constitutes your acceptance of the new Terms. We encourage you to review these Terms periodically.</p>
+  </section>
+
+  <section aria-labelledby="eligibility">
+    <h2 id="eligibility">2. Eligibility</h2>
+    <p>By using the Services, you represent and warrant that you are at least 18 years old or the age of majority in your jurisdiction, have the legal capacity to enter into contracts, and agree to comply with these Terms. If you are using the Services on behalf of an organization, you represent that you have the authority to bind that organization.</p>
+  </section>
+
+  <section aria-labelledby="account-registration">
+    <h2 id="account-registration">3. Account Registration and Security</h2>
+    <p>To access certain Services or features, you may be required to create an account. You agree to provide accurate, complete, and current information during the registration process and to update such information to keep it accurate.</p>
+    <p>You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You agree to notify us immediately if you suspect any unauthorized use of your account or other security breaches.</p>
+  </section>
+
+  <section aria-labelledby="use-of-services">
+    <h2 id="use-of-services">4. Use of Services</h2>
+    <p>You agree to use the Services only for lawful purposes and in accordance with these Terms. You shall not:</p>
+    <ul>
+      <li>Violate any applicable laws or regulations</li>
+      <li>Infringe on the rights of others, including intellectual property rights and privacy rights</li>
+      <li>Transmit defamatory, obscene, or otherwise objectionable content</li>
+      <li>Use the Services for any unauthorized commercial purpose</li>
+      <li>Attempt to gain unauthorized access to our systems or disrupt our Services</li>
+      <li>Engage in any conduct that could damage, disable, or impair our Services</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="intellectual-property">
+    <h2 id="intellectual-property">5. Intellectual Property</h2>
+    <p>All intellectual property rights in and to the content, trademarks, logos, graphics, designs, audio, video, software, and other materials provided through the Services are owned by or licensed to Oshie Pruning Services.</p>
+    <p>You acknowledge and agree that you have no ownership or proprietary rights in the Services except as expressly granted in these Terms.</p>
+    <p>You may not use, reproduce, distribute, modify, create derivative works of, publicly display, or exploit any content from the Services without our prior written consent.</p>
+  </section>
+
+  <section aria-labelledby="payment-terms">
+    <h2 id="payment-terms">6. Payment Terms</h2>
+    <p>Services that require payment must be paid in full before or at the time of service delivery, unless otherwise agreed in writing. We accept various payment methods as indicated at the time of purchase or booking.</p>
+    <p>Prices for services are subject to change without prior notice, but any price quoted at the time of service agreement or invoice will be honored for that transaction.</p>
+    <p>You are responsible for providing accurate payment information and promptly notifying us of any changes to billing details.</p>
+    <p>We reserve the right to suspend or cancel services if payment is not received according to the agreed terms.</p>
+  </section>
+
+  <section aria-labelledby="cancellations-and-refunds">
+    <h2 id="cancellations-and-refunds">7. Cancellations and Refunds</h2>
+    <p>You may cancel or reschedule services according to the cancellation policy applicable to your booking, which will be communicated at the time of service booking or contract.</p>
+    <p>Refunds, if applicable, will be processed following a review and subject to any conditions outlined in the cancellation policy.</p>
+    <p>We reserve the right to cancel or reschedule services due to unforeseen circumstances such as weather, safety concerns, or force majeure events. In such cases, we will notify you promptly and arrange alternative scheduling or refunds as appropriate.</p>
+  </section>
+
+  <section aria-labelledby="disclaimer-of-warranties">
+    <h2 id="disclaimer-of-warranties">8. Disclaimer of Warranties</h2>
+    <p>Our Services and website are provided “as is” and “as available” without any warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+    <p>We do not guarantee that the Services will be uninterrupted, error-free, secure, or meet your specific requirements.</p>
+    <p>All information, products, and services are subject to availability, and we reserve the right to modify, suspend, or discontinue any aspect at any time without prior notice.</p>
+  </section>
+
+  <section aria-labelledby="limitation-of-liability">
+    <h2 id="limitation-of-liability">9. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, Oshie Pruning Services and its affiliates, officers, employees, agents, and licensors shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Services.</p>
+    <p>In no event shall our total liability exceed the amount you paid for the specific service that gave rise to the claim.</p>
+    <p>You agree that this limitation of liability applies regardless of whether the claim is based on contract, tort, negligence, strict liability, or other legal theories.</p>
+  </section>
+
+  <section aria-labelledby="indemnification">
+    <h2 id="indemnification">10. Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless Oshie Pruning Services and its affiliates, officers, employees, and agents from and against any claims, damages, losses, liabilities, costs, or expenses (including reasonable attorneys’ fees) arising out of or resulting from your violation of these Terms or your misuse of the Services.</p>
+  </section>
+
+  <section aria-labelledby="termination">
+    <h2 id="termination">11. Termination</h2>
+    <p>We may suspend or terminate your access to the Services immediately without prior notice or liability for any reason, including if you breach these Terms.</p>
+    <p>Upon termination, your right to use the Services will immediately cease, and we may delete or deactivate your account and any related information.</p>
+  </section>
+
+  <section aria-labelledby="third-party-links-and-services">
+    <h2 id="third-party-links-and-services">12. Third-Party Links and Services</h2>
+    <p>The Services may contain links to third-party websites or services that are not owned or controlled by Oshie Pruning Services. We are not responsible for the content, policies, or practices of any third-party sites.</p>
+    <p>We encourage you to read the terms and privacy policies of any third-party sites you visit.</p>
+  </section>
+
+  <section aria-labelledby="governing-law-and-jurisdiction">
+    <h2 id="governing-law-and-jurisdiction">13. Governing Law and Jurisdiction</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of the State of New York, USA, without regard to its conflict of law principles.</p>
+    <p>You agree that any disputes arising out of or relating to these Terms or the Services will be resolved exclusively in the state or federal courts located within New York County, New York.</p>
+  </section>
+
+  <section aria-labelledby="changes-to-terms">
+    <h2 id="changes-to-terms">14. Changes to Terms</h2>
+    <p>We reserve the right to update or modify these Terms at any time without prior notice. Changes will be posted on this page with an updated effective date. Your continued use of the Services after such modifications constitutes your acceptance of the updated Terms.</p>
+    <p>We recommend reviewing these Terms regularly to stay informed of any updates.</p>
+  </section>
+
+  <section aria-labelledby="contact-information" id="contact" tabindex="0">
+    <h2 id="contact-information">15. Contact Information</h2>
+    <p>If you have any questions, concerns, or comments about these Terms, please contact us at:</p>
+    <p><strong>Oshie Pruning Services</strong></p>
+    <p><strong>Address:</strong> 20 Cooper Square, New York, NY 10003, USA</p>
+    <p><strong>Phone:</strong> <a href="tel:+18186447798">+1 (818) 644-7798</a></p>
+    <p><strong>Email:</strong> <a href="mailto:support@oshiepruning.com">support@oshiepruning.com</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>20 Cooper Square, New York, NY 10003, USA</p>
+    <p>Phone: <a href="tel:+18186447798">+1 (818) 644-7798</a></p>
+    <p>&copy; 2024 Oshie Pruning Services. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
